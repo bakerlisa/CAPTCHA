@@ -1,0 +1,47 @@
+## Full (orignal) documentation - https://docs.google.com/document/d/1csswIB1mg28DVbqoX-1UUvDHp-2yALZBzn9RPSPMpp4/edit
+## A list of all the defensive measures that were taken. on the script
+
+1. There’s a logic equation to pass
+    a. All variables update with each try 
+    b. and whenever it’s reopened
+2. Honeypot Step6
+    a. Not using display none
+    b. Not using an aria tag true
+    c. Tried to make it took as real as possible
+    d. Also added an actual “submit” button with the hope that bots would hit it
+        i. If that submit buttons hit, everything disappears
+3. Timer if recaptcha is finished in less than 2sec it completely blocks you
+4. Recaptcha - 5 tries
+5. Recap passed and Submit button hit - 5 tries
+6. Right to submission w/ no recaptcha -  2 tries
+    a. Can’t go right to submission
+7. Delete the form completely off the site for the entire session - so a bot can’t go to a new page or read hidden data
+8. Form specific - captcha for each form
+    a. Also resets when you click recaptcha button
+    b. Have to fill out on a new page
+    c. Have to fill out on a new form on the same page
+9. Everything is JS built
+    a. Made things divs and not buttons/links 
+    b. There’s a delay for it to load in
+10. started to renamed functions, variables, and class names to hide what the elements do and what we humans are looking for
+    a. EXCEPTED on step 6. we try to get bots to fill that out and hit enter
+    
+
+Things we can do to make more secure:
+1. Save variable in PHP
+2. Instead of words have a bunch of questions like: like the grass is green, sky is... , zebras are...
+3. Password protect forms
+4. Session cookie
+
+OTHER DEFENSES:
+1. Gravity forms honeypot,
+    a. Gravity Forms - Block IP
+    b. Gravity Forms - Block emails address 
+2. akemist
+3. postman smtp
+4. All else fails - Google Recaptcha
+
+Vulnerabilities:
+1. maybe they're finding our AJAX page
+2. A bot setting the complete in the session cookies
+
