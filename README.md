@@ -1,7 +1,7 @@
 ![](https://github.com/lisabroadhead/Recaptcha/blob/main/recaptcha.png)
 
 # Recaptcha
-Built a recaptcha for Nifty that works with Wordpress's Gravity Forms
+Fully Functioning spam filter that has 10 levels of security, but is slim and rpackaged to integrate with any Gravity Forms form
 
 WORKING EXAMPLE: https://www.rovepestcontrol.com/
 
