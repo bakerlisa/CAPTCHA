@@ -1,4 +1,4 @@
-![](https://github.com/lisabroadhead/lisabroadhead/blob/main/lisa.png)
+![](https://github.com/lisabroadhead/Recaptcha/blob/main/recaptcha.png)
 
 # Recaptcha
 Built a recaptcha for Nifty that works with Wordpress's Gravity Forms
