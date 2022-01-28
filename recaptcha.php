@@ -1,7 +1,6 @@
 <?php if(!function_exists('recaptcha_styles')){
     function recaptcha_styles(){ ?>
 		<script>
-			//anton's test comment
 			//sets a global Session. If its more then var its hidden value
 			var interval = 0;
 			function myTimer(){interval++;}
@@ -276,7 +275,7 @@
           		100%{display: block; opacity: 1;}
           	}
           	
-          	.recaptcha-wrapper:before{content: ''; height: 100%; width: 100%;background-color: rgba(0,0,0,.75); position: absolute; top: 0;left: 0; z-index: -10;}
+          .recaptcha-wrapper:before{content: ''; height: 100%; width: 100%;background-color: rgba(0,0,0,.75); position: absolute; top: 0;left: 0; z-index: -10;}
           .recaptcha-wrapper > div{width: 100%; position: fixed; top: 50%; transform: translateY(-50%); background-color: #646464; z-index: 1000000000; left: 0; right: 0; margin: 0 auto; max-width: 700px; padding: 25px;}
           .recaptcha-wrapper .title{font-weight: 600; font-size: 20px; padding: 0;margin: 0; color:white; text-align: left;} 
           .recaptcha-wrapper .explain{padding: 10px 0;margin: 0; color:white; text-align: left;}
